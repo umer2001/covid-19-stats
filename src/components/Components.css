@@ -1,0 +1,74 @@
+.grids {
+    width: 100%;
+}
+
+.test {
+    margin: 0 2.5rem!important;
+}
+
+.Confirmed {
+    color: #17a2b8!important;
+}
+
+.Recovered {
+    color: #28a745!important;
+}
+
+.Deaths {
+    color: #dc3545!important;
+}
+
+/*
+    single card
+*/
+
+.root {
+    min-Width: 275;
+    margin: 2% auto;
+    border-top: 1px solid rgba(255,255,255,0.09);
+    background-color: #282b2f!important;
+}
+
+.bullet {
+    display: inline-block;
+    margin: 0 2px;
+    transform: scale(0.8);
+}
+
+.title,
+.pos {
+    text-align: left;
+    padding: 22px;
+}
+  
+.title {
+    color: #a5a8ad!important;
+    font-size: 14px;
+}
+.pos {
+    margin-bottom: 12;
+    color: #6c757d!important;
+}
+
+.figures {
+    font-size: 2.5rem!important;
+}
+
+/*
+    Country Picker
+*/
+
+.MuiFormControl-root {
+    background-color: #282b2f!important;
+    border: 2px #393d42 solid!important;
+    margin-bottom: 10px!important;
+}
+
+.MuiNativeSelect-select.MuiNativeSelect-select {
+    padding: 10px 0px 10px 10px;
+    color: #a5a8ad!important;
+}
+
+.opt-li {
+    background-color: #282b2f!important;
+}
