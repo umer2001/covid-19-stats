@@ -32,7 +32,7 @@ class App extends React.Component {
     const {data, country} = this.state; 
     return (
       <div className="App">
-        <img src={covid} />
+        <img src={covid} alt="covid-19"/>
         <h1 className="heading">statistics</h1>
         <SpacingGrid data={data}/>
         <CountryPicker handleCountryChange={this.handleCountryChange}/>
