@@ -33,7 +33,7 @@ export const GeoChart = () => {
                   ]}
                 // Note: you will need to get a mapsApiKey for your project.
                 // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-                mapsApiKey="AIzaSyDy1kbpkcDk68z1vFoddvxzzXGqbY5PP54"
+                mapsApiKey={process.env.REACT_APP_MAPS_API_KEY}
                 rootProps={{ 'data-testid': '1' }}
             />
         </div>

@@ -18,6 +18,8 @@ jobs:
         run: sudo apt update && sudo apt install yarn
       - name: Install project dependencies
         run: yarn install
+      - name: Handeling environment variables
+        run: echo "REACT_APP_MAPS_API_KEY=${{ secrets.API_ONE_MAPS }}" > .env
       - name: Build React App
         run: yarn build
       - name: Install Surge

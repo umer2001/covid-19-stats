@@ -58,16 +58,13 @@ export const fetchCountryCondition = async () => {
             }
         });
         if(res.ok) {
-            console.log("ok");
             let { response } = await res.json();
             const usefulDataList = response.map((usefulData) => ([
                 usefulData.country,
                 usefulData.cases.active
             ]));
-            console.log(usefulDataList);
             return usefulDataList;
         }else { alert(res.status); }
     } catch (error) {
-        console.log(error);
     }
 }
