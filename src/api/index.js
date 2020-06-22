@@ -1,4 +1,6 @@
 const url = 'https://covid19.mathdro.id/api';
+const secondUrl = 'https://covid-193.p.rapidapi.com/statistics';
+
 
 export const fetchData = async (country) => {
     let changeableUrl = url;
@@ -43,5 +45,29 @@ export const fetchCountries = async () => {
         }else { alert(res.status); }
     } catch (error) {
 
+    }
+}
+
+export const fetchCountryCondition = async () => {
+    try {
+        const res= await fetch(secondUrl,{
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "covid-193.p.rapidapi.com",
+                "x-rapidapi-key": "3fdc4fe032mshc8158199bb0deafp1a6218jsna21a8529c093"
+            }
+        });
+        if(res.ok) {
+            console.log("ok");
+            let { response } = await res.json();
+            const usefulDataList = response.map((usefulData) => ([
+                usefulData.country,
+                usefulData.cases.active
+            ]));
+            console.log(usefulDataList);
+            return usefulDataList;
+        }else { alert(res.status); }
+    } catch (error) {
+        console.log(error);
     }
 }

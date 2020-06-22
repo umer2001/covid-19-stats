@@ -4,6 +4,7 @@ import './App.css';
 import SpacingGrid from './components/Cards';
 import Chart from './components/Chart';
 import CountryPicker from './components/CountryPicker';
+import GeoChart from './components/GeoChart';
 import Particles from 'react-particles-js';
 import covid from './img/covid.png';
 import co1 from './img/co1.png';
@@ -37,6 +38,7 @@ class App extends React.Component {
         <SpacingGrid data={data}/>
         <CountryPicker handleCountryChange={this.handleCountryChange}/>
         <Chart data={data} country={country}/>
+        <GeoChart />
         <Particles className="particles"
           params={{
             "background": {
