@@ -72,3 +72,12 @@
 .opt-li {
     background-color: #282b2f!important;
 }
+
+.geo-chart {
+    margin-top: 20px!important;
+}
+
+.geo-heading {
+    font-size: 30px;
+    color: #a5a8ad;
+}
