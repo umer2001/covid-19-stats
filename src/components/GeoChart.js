@@ -15,7 +15,7 @@ export const GeoChart = () => {
     }, []);
 
     return (
-        <div className="MuiGrid-root geo-chart root test MuiGrid-item MuiGrid-grid-md-11">
+        <div className="MuiGrid-root root test MuiGrid-item MuiGrid-grid-md-11">
             <span className="geo-heading">Active cases World wide</span>
             <Chart
                 width={'100%'}

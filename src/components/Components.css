@@ -3,7 +3,7 @@
 }
 
 .test {
-    margin: 0 2.5rem!important;
+    margin: 10px 2.5rem!important;
 }
 
 .Confirmed {
@@ -73,11 +73,11 @@
     background-color: #282b2f!important;
 }
 
-.geo-chart {
-    margin-top: 20px!important;
-}
+/*
+    geo-chart
+*/
 
 .geo-heading {
-    font-size: 30px;
+    font-size: 1.5em;
     color: #a5a8ad;
 }
