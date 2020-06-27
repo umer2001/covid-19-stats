@@ -7,7 +7,7 @@ export const GeoChart = () => {
 
     useEffect(() => {
         const fetchApi = async() => {
-            setCountryData(await fetchCountryCondition())
+            setCountryData(await fetchCountryCondition());
         }
 
         fetchApi();
@@ -33,7 +33,7 @@ export const GeoChart = () => {
                     }
                 ]}
                 options={{
-                    colorAxis: { maxValue: 500000, colors: ['#17a2b8'] },
+                    colorAxis: { maxValue: 550000, colors: ['#17a2b8'] },
                     backgroundColor: '#282b2f',
                     datalessRegionColor: '#6c757d',
                     defaultColor: '#6c757d'
